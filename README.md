@@ -1,4 +1,4 @@
-### 1 - Linear Regression
+### 1 - Linear Regression  
 ### 2 - Gradient Descent 
 ### 3 - Save model 
 ### 4 - Dummy Variables and One Hot Encoding
