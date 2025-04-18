@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1e1f25;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form {
+  background-color: #2a2b32;
+  width: 100%;
+  max-width: 500px;
+  padding: 36px 30px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.area, .location {
+  font-family: 'Roboto', sans-serif;
+  background: #3a3b44;
+  border: 1px solid #555;
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.area:focus, .location:focus {
+  outline: none;
+  border-color: #8fcf6b;
+  box-shadow: 0 0 5px rgba(143, 207, 107, 0.6);
+}
+
+.switch-field {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.switch-field input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.switch-field label {
+  background-color: #3a3b44;
+  color: #ddd;
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 1px solid #666;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  background-color: #8fcf6b;
+  color: #111;
+  border-color: #7abc58;
+}
+
+.submit, .result {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.submit {
+  background-color: #8fcf6b;
+  color: #1e1f25;
+  font-weight: bold;
+}
+
+.submit:hover {
+  background-color: #7abc58;
+}
+
+.result {
+  background-color: #dcd686;
+  color: #333;
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 28px 20px;
+  }
+
+  .switch-field label {
+    padding: 10px 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
